@@ -86,9 +86,7 @@ Install blog_be with npm
   yarn install blog_be
   cd blog_be
 ```
-   
-<!-- Running Tests -->
-### :test_tube: Running Tests
+  
 
 <!-- Run Locally -->
 ### :running: Run Locally
