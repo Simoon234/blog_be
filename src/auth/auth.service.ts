@@ -58,7 +58,6 @@ export class AuthService {
 
   async login(req: LogUserReq, res: Response): Promise<any> {
     const { email, password } = req;
-
     try {
       const user = await UserEntity.findOne({
         where: {
@@ -74,8 +73,11 @@ export class AuthService {
 
       const pwd = await AuthService.comparePassword(password, user.password);
 
-      if (!user || pwd === false) {
-        return res.json({ error: "Invalid login" });
+      if (pwd === false) {
+        throw new HttpException(
+          'Password do not match',
+          HttpStatus.BAD_REQUEST,
+        );
       }
 
       const token = AuthService.createToken(

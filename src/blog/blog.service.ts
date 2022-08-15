@@ -8,7 +8,7 @@ import {MailService} from 'src/mail/mail.service';
 import {ObjUserInterface} from "../user/types";
 import * as fs from "fs";
 import * as path from "path";
-import {storageDirectory} from 'src/utils/storage';
+import { storageDirectory } from 'src/utils/storage';
 
 @Injectable()
 export class BlogService {
