@@ -25,6 +25,7 @@ Maybe you can mention me or this repo in the acknowledgements too
   * [Tech Stack](#space_invader-tech-stack)
   * [Features](#dart-features)
 - [Getting Started](#toolbox-getting-started)
+  * [Environment](#key-environment-variables)
   * [Prerequisites](#bangbang-prerequisites)
   * [Installation](#gear-installation)
   * [Run Locally](#running-run-locally)
@@ -61,9 +62,24 @@ Maybe you can mention me or this repo in the acknowledgements too
 ### :dart: Features
 
 - Passport
-- Registretion
+- Registration
 - Login
 - CRUD
+
+<!-- Env Variables -->
+### :key: Environment Variables
+
+To run this project, you will need to add the following environment variables to your .env file
+
+``SECRET`` = random string
+
+``DB``= database name
+
+``USER``= database username
+
+``HOST``= database host
+
+``PORT``= database port
 
 <!-- Getting Started -->
 ## 	:toolbox: Getting Started
@@ -112,7 +128,7 @@ Install dependencies
 Start the server
 
 ```bash
-  yarn start
+  nest start --watch
 ```
 
 <!-- Contact -->
